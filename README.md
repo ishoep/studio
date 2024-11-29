@@ -1,2 +1,2 @@
 # studio
-my web studio landing page
+my webstudio landing page
