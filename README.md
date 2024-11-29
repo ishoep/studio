@@ -1,2 +1,2 @@
 # studio
-my web studio repo
+my web studio landing page
