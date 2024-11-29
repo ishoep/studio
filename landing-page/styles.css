@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Chango&family=Chewy&family=Galindo&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Modak&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Potta+One&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 50px;
+    background-color: rgb(24, 24, 24);
+    font-family: "Lexend", sans-serif;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+}
+.sec-title {
+    font-size: 50px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    font-size: 30px;
+    transition: 0.2s;
+}
+.nav-logo:hover {
+    text-shadow: 0 0 10px white;
+    transition: 0.2s;
+}
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    font-size: 17px;
+}
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.menu-link {
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+  
+.menu-container:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-button:hover {
+    box-shadow: 
+    5px 5px 15px rgba(2, 44, 255, 0.6),  /* Красная тень */
+    -5px -5px 15px rgba(255, 0, 234, 0.6), /* Зеленая тень */
+    5px -5px 15px rgba(0, 0, 255, 0.6),  /* Синяя тень */
+    -5px 5px 15px rgba(0, 255, 204, 0.6); /* Желтая тень */
+}
+
+
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 235px;
+}
+.home-button {
+    margin-top: 25px;
+    padding: 15px 30px 15px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgb(90, 89, 89);
+}
+
+
+
+#About {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.about-sps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.specialization {
+    padding: 25px;
+    width: 20%;
+    background-color: rgb(17, 17, 17);
+    border-radius: 10px;
+    border: 2px solid rgb(137, 137, 137);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.specialization:hover {
+    box-shadow: 
+    5px 5px 15px rgba(255, 0, 0, 0.6),  /* Красная тень */
+    -5px -5px 15px rgba(0, 255, 0, 0.6), /* Зеленая тень */
+    5px -5px 15px rgba(0, 0, 255, 0.6),  /* Синяя тень */
+    -5px 5px 15px rgba(255, 255, 0, 0.6); /* Желтая тень */
+    padding: 30px;
+    transition: 0.3s;
+    border: 2px solid white;
+}
+.about-spspan {
+    font-size: 25px;
+}
+.about-spsb {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.about-button {
+    margin-top: 30px;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgb(41, 41, 90);
+}
+
+
+
+#Projects {
+    margin-top: 200px;
+    padding-bottom: 999px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-main {
+    width: 90%;
+    height: 500px;
+    margin-top: 30px;
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    background-position: center;
+}
+.grid-item {
+    border-radius: 10px;
+}
