@@ -556,10 +556,13 @@ nav {
 }
 @media (max-width: 426px) {
     .home-title {
-        font-size: 50px;
+        font-size: 45px;
+    }
+    .sec-title {
+        font-size: 27px;
     }
     .frmidea {
-        width: 350px;
+        font-size: 20px;
     }
     .project{
         width: 100%;
@@ -575,25 +578,21 @@ nav {
 }
 @media (max-width: 341px) {
     .home-title {
-        font-size: 40px;
+        font-size: 35px;
     }
     .frmidea {
-        font-size: 23px;
+        font-size: 17px;
     }
     .sec-title {
-        font-size: 27px;
+        font-size: 20px;
+        padding-bottom: 0;
     }
     .frmidea {
+        margin-top: 5px;
         width: 250px;
     }
 }
-@media (max-width: 320px) {
-    .project{
-        width: 240px;
-    }
-    .project img {
-        width: 240px;
-    }
+@media (max-width: 321px) {
     .hello {
         font-size: 50px;
     }
