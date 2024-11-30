@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Chango&family=Chewy&family=Galindo&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Modak&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Potta+One&display=swap');
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
+    background: linear-gradient(to right, #151315, #0b0916);
+    min-height: 100%;
     padding-top: 30px;
-    background-color: rgb(24, 24, 24);
     font-family: "Lexend", sans-serif;
     color: white;
     padding-left: 10%;
@@ -14,6 +16,7 @@ body {
 .sec-title {
     font-size: 50px;
     text-align: center;
+    padding-bottom: 10px;
 }
 nav {
     display: flex;
@@ -61,10 +64,8 @@ nav {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: #1a1a1a;
-    border: 1px solid #000000;
-    border-radius: 10px;
+    left: -20px;
+    background-color: #0f0f0f;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 0;
@@ -187,6 +188,8 @@ nav {
     text-align: center;
 }
 
+
+
 .home {
     display: flex;
     flex-direction: column;
@@ -217,7 +220,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 колонки */
     grid-gap: 20px; /* Расстояние между блоками */
-    padding: 20px;
     gap: 15px;
 }
 .specialization {
@@ -262,56 +264,243 @@ nav {
 #Projects {
     margin-top: 200px;
     padding-bottom: 999px;
+}
+.projects {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.projects-pading {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.project {
+    width: 500px;
+    border-radius: 20px;
+    background-color: #191919;
+}
+.project-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 13px;
 }
-.projects-main {
-    width: 90%;
-    height: 500px;
-    margin-top: 30px;
-    background-color: #000000;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    box-sizing: border-box;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-}
-
-.grid {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 10px;
-    background-position: center;
-}
-.grid-item {
-    border-radius: 10px;
+.project img {
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
 
+@media (max-width: 2000px) {
+    .mytask {
+        font-size: 30px;
+    }
+    .about-des {
+        font-size: 16px;
+    }
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 400px;
+    }
+    .project img {
+        width: 400px;
+    }
+}
+@media (max-width: 1524px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 400px;
+    }
+    .project img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1480px) {
+    .about-padding {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 400px;
+    }
+    .project img {
+        width: 400px;
+    }
+}
+@media (max-width: 1432px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 380px;
+    }
+    .project img {
+        width: 380px;
+    }
+}
+
+@media (max-width: 1388px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 370px;
+    }
+    .project img {
+        width: 370px;
+    }
+}
+@media (max-width: 1368px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 360px;
+    }
+    .project img {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1348px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 340px;
+    }
+    .project img {
+        width: 340px;
+    }
+}
+
+@media (max-width: 1308px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 330px;
+    }
+    .project img {
+        width: 330px;
+    }
+}
+@media (max-width: 1287px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 320px;
+    }
+    .project img {
+        width: 320px;
+    }
+}
+@media (max-width: 1267px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 300px;
+    }
+    .project img {
+        width: 300px;
+    }
+}
+@media (max-width: 1227px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width:280px;
+    }
+    .project img {
+        width: 280px;
+    }
+}
+@media (max-width: 1187px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 260px;
+    }
+    .project img {
+        width: 260px;
+    }
+}
+@media (max-width: 1147px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 240px;
+    }
+    .project img {
+        width: 240px;
+    }
+}
+@media (max-width: 1107px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 220px;
+    }
+    .project img {
+        width: 220px;
+    }
+}
+@media (max-width: 1067px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 200px;
+    }
+    .project img {
+        width: 200px;
+    }
+}
 
 
-
-
-
-
-@media (max-width: 1025px) {
+@media (max-width: 1027px) {
+    .projects-pading {
+        padding: 0;
+    }
+    .project {
+        width: 285px;
+    }
+    .project img {
+        width: 285px;
+    }
     .about-sps {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (max-width: 951px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 770px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-sps {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .home {
         padding-top: 130px;
     }
@@ -322,19 +511,20 @@ nav {
     #Projects {
         margin-top: 0;
     }
-    .projects-main {
-        width: 95%;
+    .projects {
+        gap: 15px;
+    }
+    .project {
+        width: 100%;
+    }
+    .project img {
+        width: 100%;
     }
     .menu-toggle {
         display: flex;
-        position: fixed;
-        background-color: #0f0f0f;
         align-items: center;
         justify-content: center;
         text-align: center;
-        top: 0;
-        margin-top: 32px;
-        border-radius: 5px;
     }
     .nav-links {
         display: none;
@@ -347,9 +537,6 @@ nav {
     }
 }
 @media (max-width: 536px) {
-    nav {
-        padding-right: 12%;
-    }
     body {
         padding-left: 0;
         padding-right: 0;
@@ -374,6 +561,12 @@ nav {
     .frmidea {
         width: 350px;
     }
+    .project{
+        width: 100%;
+    }
+    .project img {
+        width: 100%;
+    }
 }
 @media (max-width: 376px) {
     .home-title {
@@ -392,5 +585,19 @@ nav {
     }
     .frmidea {
         width: 250px;
+    }
+}
+@media (max-width: 320px) {
+    .project{
+        width: 240px;
+    }
+    .project img {
+        width: 240px;
+    }
+    .hello {
+        font-size: 50px;
+    }
+    .hello img {
+        width: 40px;
     }
 }
