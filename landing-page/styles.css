@@ -540,6 +540,10 @@ nav {
     #Projects {
         margin-top: 0;
     }
+    .ratings {
+        margin-top: 0px;
+        padding-bottom: 0;
+    }
     .projects {
         gap: 15px;
     }
