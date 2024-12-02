@@ -31,3 +31,4 @@ menuLinks.forEach(link => {
         fullscreenMenu.classList.remove('open');
     });
 });
+
