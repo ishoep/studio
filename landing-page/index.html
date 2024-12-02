@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="langSwitcher" style="position: fixed; top: 10px; right: 10px;">
+        <button data-lang="ru">RU</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="uz">UZ</button>
+    </div>
     <nav>
         <div class="nav-logo">W-ALT</div>
             <div style="display: flex; justify-content: center; align-items: center;">
                 <div class="nav-links">
                     <div class="menu-container">
-                        <a href="#Abouth" class="menu-link">About<svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
+                        <a href="#Abouth" class="menu-link" data-i18n="about">About<svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
                         <div class="dropdown-menu">
                           <div class="drpdwn">
                             <a href="#Projectsh">Projects</a>

@@ -13,6 +13,20 @@ body {
     padding-right: 10%;
     height: 100vh;
 }
+#langSwitcher {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+#langSwitcher button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+  }
+#langSwitcher button:hover {
+    background-color: #f0f0f0;
+  }
 .sec-title {
     font-size: 50px;
     text-align: center;
