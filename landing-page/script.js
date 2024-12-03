@@ -226,6 +226,13 @@ document.getElementById("langSwitcher").addEventListener("click", (event) => {
     }
 });
 
+document.getElementById("langSwitcher1").addEventListener("click", (event) => {
+    if (event.target.dataset.lang) {
+        const lang = event.target.dataset.lang;
+        setLanguage(lang);
+    }
+});
+
 const browserLang = navigator.language.slice(0, 2);
 setLanguage(translations[browserLang] ? browserLang : "en");
 

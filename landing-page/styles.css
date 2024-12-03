@@ -15,17 +15,50 @@ body {
 }
 #langSwitcher {
     display: flex;
-    gap: 10px;
-    margin: 10px 0;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: 0 0 10px black;
+    border: 2px solid #545454;
+    border-radius: 10px;
   }
 #langSwitcher button {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+    padding: 7px 10px;
+    border: none;
     cursor: pointer;
+    color:  white;
+    font-weight: bold;
   }
 #langSwitcher button:hover {
     background-color: #f0f0f0;
+    color: black;
+  }
+
+  #langSwitcher1 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: 0 0 10px black;
+    border: 2px solid #545454;
+    border-radius: 10px;
+  }
+#langSwitcher1 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 29, 29);
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+    color:  white;
+    font-weight: bold;
+  }
+#langSwitcher1 button:hover {
+    background-color: #f0f0f0;
+    color: black;
   }
 .sec-title {
     font-size: 50px;
@@ -145,6 +178,7 @@ nav {
     background-color: rgb(10, 10, 10);
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
@@ -749,7 +783,7 @@ footer {
         display: none;
     }
 }
-@media (max-width: 770px) {
+@media (max-width: 771px) {
     nav {
         display: flex;
         justify-content: space-between;
@@ -795,6 +829,9 @@ footer {
     .nav-links {
         display: none;
     }
+    #langSwitcher {
+        display: none;
+    }
     .nav-button {
         display: none;
     }
@@ -809,14 +846,23 @@ footer {
         gap: 15px;
     }
 }
+@media (max-width: 653px) {
+    .home-title {
+        font-size: 60px;
+        font-weight: bold;
+    }
+}
 @media (max-width: 536px) {
     body {
         padding-left: 0;
         padding-right: 0;
     }
     .home-title {
-        font-size: 55px;
+        font-size: 50px;
         font-weight: bold;
+    }
+    .sec-title {
+        font-size: 35px;
     }
 }
 @media (max-width: 481px) {
@@ -829,7 +875,7 @@ footer {
 }
 @media (max-width: 426px) {
     .home-title {
-        font-size: 45px;
+        font-size: 40px;
     }
     .sec-title {
         font-size: 27px;
@@ -846,7 +892,7 @@ footer {
 }
 @media (max-width: 376px) {
     .home-title {
-        font-size: 45px;
+        font-size: 35px;
     }
     .contact-span {
         font-size: 20px;
@@ -876,8 +922,8 @@ footer {
     form label {
         font-size: 14px;
     }
-    .hello {
-        font-size: 50px;
+    .home-title {
+        font-size: 32px;
     }
     .hello img {
         width: 40px;

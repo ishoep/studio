@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="langSwitcher" style="position: fixed; top: 10px; right: 10px;">
-        <button data-lang="ru">RU</button>
-        <button data-lang="en">EN</button>
-        <button data-lang="uz">UZ</button>
-    </div>
     <nav>
         <div class="nav-logo" data-i18n="footerLogo">W-ALT</div>
             <div style="display: flex; justify-content: center; align-items: center;">
@@ -28,9 +23,18 @@
                     <a href="#Ratingsh" data-i18n="ratings">Ratings</a>
                     <a href="#Socialsh" data-i18n="socials">Socials</a>
                 </div>
+                <div id="langSwitcher">
+                    <button data-lang="ru" style="border-top-left-radius: 10px;
+                    border-bottom-left-radius: 5px;">RU</button>
+                    <button data-lang="en">EN</button>
+                    <button data-lang="uz" style="border-top-right-radius: 10px;
+                    border-bottom-right-radius: 5px;">UZ</button>
+                </div>
             </div>
             <div>
-                <button class="nav-button" data-i18n="contact">Contact</button>
+                <a href="#Socialsh">
+                    <button class="nav-button" data-i18n="contact">Contact</button>
+                </a>
                 <button class="menu-toggle" id="menuToggle">☰</button>
             </div>
     </nav>
@@ -40,10 +44,16 @@
             <li><a href="#Abouth" data-i18n="about">About</a></li>
             <li><a href="#Projectsh" data-i18n="projects">Projects</a></li>
             <li><a href="#Featuresh" data-i18n="features">Features</a></li>
-            <li><a href="#Blogh">Blog</a></li>
             <li><a href="#Ratingsh" data-i18n="ratings">Ratings</a></li>
             <li><a href="#Socialsh" data-i18n="socials">Socials</a></li>
         </ul>
+        <div id="langSwitcher1">
+            <button data-lang="ru" style="border-top-left-radius: 10px;
+            border-bottom-left-radius: 5px;">RU</button>
+            <button data-lang="en">EN</button>
+            <button data-lang="uz" style="border-top-right-radius: 10px;
+            border-bottom-right-radius: 5px;">UZ</button>
+        </div>
     </div>
     <section class="home">
         <span class="home-title" data-i18n="homeTitle">WEB-ALT, DEVELOPMENT STUDIO</span>
@@ -52,7 +62,7 @@
     </section>
     <section id="About">
         <div id="Abouth" style="padding-bottom: 100px;"></div>
-        <span class="sec-title" data-i18n="ourSpecialization">Our specialization in web development</span>
+        <span class="sec-title" data-i18n="ourSpecialization" style="padding-bottom: 10px;">Our specialization in web development</span>
         <div class="about-sps">
            <div class="specialization">
                 <span class="about-spspan" data-i18n="webStores">Web stores</span>
