@@ -781,6 +781,9 @@ footer {
     }
 }
 @media (max-width: 771px) {
+    #loader {
+        display: none;
+    }
     nav {
         display: flex;
         justify-content: space-between;
